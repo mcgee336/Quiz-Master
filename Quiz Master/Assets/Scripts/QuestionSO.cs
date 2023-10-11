@@ -8,5 +8,10 @@ using UnityEngine;
 public class QuestionSO : ScriptableObject
 {
     [TextArea(2,6)]
-    [SerializeField] string strquestion = "Enter new question here";  
+    [SerializeField] string strquestion = "Enter new question here";
+
+    public string GetQuestion()
+    {
+        return strquestion;
+    }
 }
