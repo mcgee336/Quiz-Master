@@ -19,7 +19,7 @@ public class QuestionSO : ScriptableObject
     {
         return stranswers[index];
     }
-    public int GetCorrectAnserIndex()
+    public int GetCorrectAnswerIndex()
     {
         return intCorrectAnswerIndex;
     }
