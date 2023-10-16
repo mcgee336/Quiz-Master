@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 1
   m_EditorClassIdentifier: 
   strquestion: Who Is the oldest video game character here?
+  stranswers:
+  - Mario
+  - Pac-Man
+  - Sonic
+  - Crash Bandicoot
+  intCorrectAnswerIndex: 1
