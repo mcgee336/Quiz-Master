@@ -991,6 +991,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1432845796}
     m_Modifications:
     - target: {fileID: 1558032046012877725, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558032046012877725, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1106,6 +1110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Answerbutton (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8480350077357717860, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0389d112350e56d4690be58a19fc72a8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1124,6 +1132,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1432845796}
     m_Modifications:
+    - target: {fileID: 1558032046012877725, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1558032046012877725, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1240,6 +1252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Answerbutton (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8480350077357717860, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0389d112350e56d4690be58a19fc72a8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1268,6 +1284,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1432845796}
     m_Modifications:
+    - target: {fileID: 1558032046012877725, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1558032046012877725, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1384,6 +1404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Answerbutton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8480350077357717860, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0389d112350e56d4690be58a19fc72a8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1533,6 +1557,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1432845796}
     m_Modifications:
     - target: {fileID: 1558032046012877725, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558032046012877725, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1644,6 +1672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Answerbutton (0)
       objectReference: {fileID: 0}
+    - target: {fileID: 8480350077357717860, guid: 78b5b04a5e5d043418cef2fa19ec94e9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0389d112350e56d4690be58a19fc72a8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
