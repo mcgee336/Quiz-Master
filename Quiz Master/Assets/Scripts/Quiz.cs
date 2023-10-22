@@ -6,30 +6,70 @@ using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour
 {
+    [Header("Questions")]
     [SerializeField] TextMeshProUGUI questiontext;
     [SerializeField] QuestionSO strquestion;
+
+    [Header("Answers")]
     [SerializeField] GameObject[] answerButtons;
-     int intcorrectAnswerIndex;
+    int intcorrectAnswerIndex;
+    bool bolhasAnsweredEarly;
+
+    [Header("Button Colors")]
     [SerializeField] Sprite sprdefaultAnswerSprite;
     [SerializeField] Sprite sprcorrectAnswerSprite;
 
+    [Header("Timer")]
+    [SerializeField] Image timerImage;
+    Timer timer;
+
     void Start()
     {
+        timer = FindObjectOfType<Timer>();
         GetNextQuestion();
         //DisplayQuestion();
 
     }
+
+    void Update()
+    {
+        timerImage.fillAmount = timer.flfillFraction;
+        if (timer.bolloadNextQuestion)
+        {
+            bolhasAnsweredEarly = false;
+            GetNextQuestion();
+            timer.bolloadNextQuestion = false;
+        }
+        else if (!bolhasAnsweredEarly && !timer.bolisAnsweringQuestion)
+        {
+            DisplayAnswer(-1);
+            SetButtonState(false);
+
+        }
+    }
+
+
+
     public void OnAnswerSelected(int index)
     {
+        DisplayAnswer(index);
+        bolhasAnsweredEarly = true;
+        SetButtonState(false);
+        timer.CancelTimer();
+    }
+
+    void DisplayAnswer(int index)
+    {
+
         Image imgbuttonImage;
 
 
-        if (index == strquestion.GetCorrectAnswerIndex()) 
+        if (index == strquestion.GetCorrectAnswerIndex())
         {
             questiontext.text = "Correct!";
             imgbuttonImage = answerButtons[index].GetComponent<Image>();
             imgbuttonImage.sprite = sprcorrectAnswerSprite;
-        } 
+        }
         else
         {
             intcorrectAnswerIndex = strquestion.GetCorrectAnswerIndex();
@@ -38,7 +78,6 @@ public class Quiz : MonoBehaviour
             imgbuttonImage = answerButtons[intcorrectAnswerIndex].GetComponent<Image>();
             imgbuttonImage.sprite = sprcorrectAnswerSprite;
         }
-        SetButtonState(false);
     }
   
     void GetNextQuestion()
