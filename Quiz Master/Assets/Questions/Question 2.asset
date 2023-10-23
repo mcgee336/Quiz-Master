@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 2
   m_EditorClassIdentifier: 
   strquestion: Which video game console has the most lifetime sales?
+  stranswers:
+  - Xbox 360
+  - Wii
+  - Playstation 2
+  - Nintendo Switch
+  intCorrectAnswerIndex: 2

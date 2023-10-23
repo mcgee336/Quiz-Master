@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 4
   m_EditorClassIdentifier: 
   strquestion: What was the first video game?
+  stranswers:
+  - Pong
+  - Tennis for Two
+  - Super Mario
+  - Bertie the Brain
+  intCorrectAnswerIndex: 3

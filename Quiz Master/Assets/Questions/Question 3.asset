@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strquestion: 'What color does the protagonist of nintendo''s Super Mario series
     predominantly wear? '
+  stranswers:
+  - Red
+  - Green
+  - Blue
+  - Yellow
+  intCorrectAnswerIndex: 0

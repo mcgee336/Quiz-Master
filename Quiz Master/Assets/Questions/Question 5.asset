@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 5
   m_EditorClassIdentifier: 
   strquestion: How many numbered entries are there in the Final Fantasy series?
+  stranswers:
+  - 7
+  - 20
+  - 16
+  - 13
+  intCorrectAnswerIndex: 2
